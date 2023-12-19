@@ -49,8 +49,11 @@ export default {};
     background-color: $input-bkg;
     align-items: center;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 7px;
     margin-left: 5px;
+    & > *:nth-child(2) {
+      color: $search-head;
+    }
     input {
       background-color: transparent;
       outline: none;
