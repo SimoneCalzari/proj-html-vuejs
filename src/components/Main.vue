@@ -1,8 +1,10 @@
 <script>
 import Jumbo from "./Jumbo.vue";
+import MainAboutUs from "./MainAboutUs.vue";
 export default {
   components: {
     Jumbo,
+    MainAboutUs,
   },
 };
 </script>
@@ -10,6 +12,7 @@ export default {
 <template>
   <main>
     <Jumbo />
+    <MainAboutUs />
   </main>
 </template>
 
