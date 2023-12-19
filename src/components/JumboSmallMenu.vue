@@ -17,7 +17,7 @@ ul {
   background-color: white;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  margin-top: 5vw;
+  margin-top: 4vw;
   li {
     padding: 10px;
     text-align: center;
