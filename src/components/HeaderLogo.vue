@@ -9,11 +9,8 @@ export default {};
 </template>
 
 <style scoped lang="scss">
-.logo-container {
+img {
   width: 160px;
-  img {
-    width: 100%;
-    display: block;
-  }
+  display: block;
 }
 </style>

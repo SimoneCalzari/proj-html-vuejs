@@ -30,6 +30,7 @@ export default {};
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    cursor: pointer;
     .notify {
       font-size: 10px;
       color: white;

@@ -1,8 +1,10 @@
 <script>
 import JumboButton from "./JumboButton.vue";
+import JumboSmallMenu from "./JumboSmallMenu.vue";
 export default {
   components: {
     JumboButton,
+    JumboSmallMenu,
   },
 };
 </script>
@@ -10,9 +12,14 @@ export default {
 <template>
   <section id="jumbo">
     <div class="jumbo-content flex">
-      <h2>Commence business</h2>
-      <h1>Distant Mentoring Program</h1>
-      <JumboButton />
+      <div class="jumbo-info flex">
+        <h2>Commence business</h2>
+        <h1>Distant Mentoring Program</h1>
+        <JumboButton />
+      </div>
+      <div class="jumbo-menu-small">
+        <JumboSmallMenu />
+      </div>
     </div>
   </section>
 </template>
@@ -24,19 +31,22 @@ export default {
   background-size: cover;
   .jumbo-content {
     height: 100%;
+  }
+  .jumbo-info {
+    flex-grow: 1;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-  h1 {
-    font-size: 40px;
-    color: white;
-    margin-bottom: 25px;
-  }
-  h2 {
-    font-size: 22px;
-    color: white;
-    margin-bottom: 10px;
+    align-items: center;
+    h1 {
+      font-size: 40px;
+      color: white;
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 22px;
+      color: white;
+      margin-bottom: 10px;
+    }
   }
 }
 </style>
