@@ -1,10 +1,12 @@
 <script>
 import Jumbo from "./Jumbo.vue";
 import MainAboutUs from "./MainAboutUs.vue";
+import MainStats from "./MainStats.vue";
 export default {
   components: {
     Jumbo,
     MainAboutUs,
+    MainStats,
   },
 };
 </script>
@@ -13,6 +15,7 @@ export default {
   <main>
     <Jumbo />
     <MainAboutUs />
+    <MainStats />
   </main>
 </template>
 

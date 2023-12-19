@@ -59,6 +59,7 @@ export default {};
 
 .box-content {
   justify-content: space-between;
+  align-items: start;
   margin-top: 150px;
   margin-bottom: 100px;
   .box-info {
@@ -102,7 +103,7 @@ export default {};
       border-radius: 50%;
       border: 8px solid $circle;
       top: -15px;
-      left: 105%;
+      right: -75px;
       position: absolute;
     }
   }
@@ -122,14 +123,14 @@ export default {};
       border-radius: 10px;
       overflow: hidden;
       position: absolute;
-      top: -85px;
-      right: -85px;
+      top: -90px;
+      right: -70px;
     }
     .box-shape-abs {
       position: absolute;
       width: 120px;
       height: 120px;
-      bottom: -50px;
+      bottom: -90px;
       right: 50px;
     }
     &::after {
@@ -140,7 +141,8 @@ export default {};
       background-image: url("../assets/img/maxcoach-shape-08.png");
       position: absolute;
       transform: rotateX(180deg);
-      bottom: 35px;
+      bottom: -5px;
+      left: 5px;
       z-index: -1;
     }
     &::before {
@@ -150,8 +152,8 @@ export default {};
       height: 170px;
       background-image: url("../assets/img/maxcoach-shape-07.png");
       position: absolute;
-      top: -60px;
-      right: 0px;
+      top: -75px;
+      right: 15px;
       z-index: -1;
     }
   }
