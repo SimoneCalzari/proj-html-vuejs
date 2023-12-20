@@ -24,6 +24,7 @@ export default {};
         </div>
         <!-- /parte sinistra con le info -->
         <div class="box-person">
+          <!-- titolo e paragrafo -->
           <h3>
             Professional team of specialists and passionate mentors at reach
           </h3>
@@ -32,6 +33,8 @@ export default {};
             is the best choice. Their tutor are smart and professional when
             dealing with students.
           </p>
+          <!-- /titolo e paragrafo -->
+          <!-- persona -->
           <div class="person flex">
             <div class="person-img">
               <img src="../assets/img/testimonial-avata-01.jpg" alt="" />
@@ -41,6 +44,32 @@ export default {};
               <h5>/ IT specialist</h5>
             </div>
           </div>
+          <!-- /persona -->
+          <!-- background abs top -->
+          <div class="abs-top">
+            <h3>
+              The MaxCoach team works really hard to ensure high level of
+              quality
+            </h3>
+            <p>
+              I am happy with their arrangement of lesson and subject. They have
+              smart tutor and they are professional when dealing with students.
+            </p>
+          </div>
+          <!-- /background abs top -->
+          <!-- background abs bottom -->
+          <div class="abs-bottom">
+            <div class="person flex">
+              <div class="person-img">
+                <img src="../assets/img/testimonial-avata-02.jpg" alt="" />
+              </div>
+              <div class="person-info flex">
+                <h4 class="upper">mina hollace</h4>
+                <h5>/ Freelancer</h5>
+              </div>
+            </div>
+          </div>
+          <!-- /background abs bottom -->
         </div>
       </div>
     </div>
@@ -51,6 +80,7 @@ export default {};
 @use "../assets/scss/partials/variables" as *;
 section {
   padding-top: 200px;
+  padding-bottom: 80px;
 }
 .box-content {
   justify-content: space-between;
@@ -89,8 +119,10 @@ section {
     }
   }
   .box-person {
+    position: relative;
     width: 58%;
     padding: 40px;
+    background-color: white;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
       rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     h3 {
@@ -125,6 +157,53 @@ section {
       h5 {
         font-size: 13px;
         color: #9c9c9c;
+      }
+    }
+    .abs-top {
+      position: absolute;
+      top: -95px;
+      z-index: -1;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+      padding: 25px;
+      width: 75%;
+      left: 12.5%;
+      filter: opacity(0.5);
+      h3 {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .abs-bottom {
+      position: absolute;
+      bottom: -75px;
+      z-index: -1;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+      padding: 25px;
+      width: 75%;
+      left: 12.5%;
+      filter: opacity(0.5);
+
+      .person-img {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      h4 {
+        font-size: 12px;
+        margin-bottom: 8px;
+      }
+      h5 {
+        font-size: 11px;
       }
     }
   }
