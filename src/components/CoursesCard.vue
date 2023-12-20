@@ -1,5 +1,10 @@
 <script>
 export default {
+  data() {
+    return {
+      hoverCard: false,
+    };
+  },
   props: {
     card: Object,
   },
@@ -7,12 +12,15 @@ export default {
     getImagePath(imgPath) {
       return new URL(imgPath, import.meta.url).href;
     },
+    cardOnOff() {
+      this.hoverCard = !this.hoverCard;
+    },
   },
 };
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" @mouseenter="cardOnOff()" @mouseleave="cardOnOff()">
     <!-- immagine -->
     <div class="box-img">
       <img
@@ -30,7 +38,7 @@ export default {
         <span>{{ card.cost1 }}</span>
         <span>{{ card.cost2 }}</span>
       </div>
-      <h4>{{ card.title }}</h4>
+      <h4 :class="{ hover: hoverCard }">{{ card.title }}</h4>
       <span class="lessons">
         <font-awesome-icon icon="fa-regular fa-file-lines" />
         {{ card.lessons }}
@@ -52,6 +60,7 @@ export default {
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
+  cursor: pointer;
   .box-img {
     position: relative;
     .tag {
@@ -88,6 +97,9 @@ export default {
       line-height: 1.5;
       margin-top: 15px;
       margin-bottom: 25px;
+      &.hover {
+        color: $search-head;
+      }
     }
     .lessons {
       margin-right: 25px;
