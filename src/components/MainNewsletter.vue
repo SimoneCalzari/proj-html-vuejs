@@ -5,7 +5,10 @@ export default {};
 <template>
   <section>
     <div class="container">
-      <h2>Subscribe <span>Newsletters</span></h2>
+      <h2>
+        Subscribe
+        <span>Newsletters</span>
+      </h2>
       <p>
         Enter your email address to register our newsletter subscription
         delivered on a regular basis!
@@ -28,9 +31,20 @@ h2 {
   font-size: 34px;
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
   span {
     color: $search-head;
     font-weight: lighter;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 205px;
+    height: 193px;
+    position: absolute;
+    background-image: url("../assets/img/maxcoach-shape-09.png");
+    right: -7vw;
+    top: -30px;
   }
 }
 p {
@@ -41,12 +55,35 @@ p {
   margin: 0 auto;
   line-height: 1.6;
   margin-bottom: 40px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    border: 6px solid #8fd6ca;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -23vw;
+    bottom: -30px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 127px;
+    height: 123px;
+    position: absolute;
+    background-image: url("../assets/img/maxcoach-shape-02.png");
+    top: 20px;
+    right: -22vw;
+  }
 }
 .input-box {
   width: 55%;
   margin: 0 auto;
   border-radius: 7px;
   overflow: hidden;
+  position: relative;
   input {
     border: none;
     outline: none;
