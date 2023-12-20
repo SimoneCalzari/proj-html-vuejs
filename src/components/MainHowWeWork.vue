@@ -17,6 +17,9 @@ export default {};
             <img src="../assets/img/icon-youtube-play.png" alt="About-us-2" />
           </div>
           <!-- /logo youtube -->
+          <div class="quatrefoil">
+            <img src="../assets/img/quatrefoil1.png" alt="" />
+          </div>
         </div>
 
         <!-- /parte sinistra con foto -->
@@ -53,7 +56,7 @@ section {
 .box-content {
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-bottom: 100px;
   .box-info {
     width: 35%;
@@ -94,7 +97,7 @@ section {
       height: 50px;
       border-radius: 50%;
       border: 8px solid $circle;
-      top: -80px;
+      top: -110px;
       left: -15px;
       position: absolute;
       z-index: -1;
@@ -137,6 +140,18 @@ section {
       bottom: -100px;
       right: -20px;
       z-index: -1;
+    }
+    .quatrefoil {
+      width: 200px;
+      position: absolute;
+      top: -80px;
+      left: -6vw;
+      z-index: -1;
+      transform: rotate(60deg);
+      img {
+        width: 100%;
+        display: block;
+      }
     }
   }
 }

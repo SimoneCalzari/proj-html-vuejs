@@ -20,6 +20,9 @@ export default {
           <div class="max-shape">
             <img src="../assets/img/maxcoach-shape-01.png" alt="" />
           </div>
+          <div class="quatrefoil">
+            <img src="../assets/img/quatrefoil2.png" alt="" />
+          </div>
         </div>
 
         <!-- /parte sinistra con foto -->
@@ -126,6 +129,18 @@ export default {
       position: absolute;
       bottom: 40px;
       left: -20vw;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .quatrefoil {
+      width: 200px;
+      position: absolute;
+      top: 10px;
+      left: -4vw;
+      z-index: -1;
+      transform: rotate(45deg);
       img {
         width: 100%;
         display: block;
