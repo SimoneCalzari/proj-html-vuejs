@@ -80,9 +80,8 @@ h4 {
 h2 {
   color: $titles;
   font-size: 34px;
-  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   span {
     color: $search-head;
     font-weight: lighter;
