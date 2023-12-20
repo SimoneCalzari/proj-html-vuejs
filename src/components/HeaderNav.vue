@@ -24,6 +24,6 @@ export default {
 
 <style scoped lang="scss">
 ul {
-  gap: 30px;
+  gap: 25px;
 }
 </style>

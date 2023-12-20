@@ -95,6 +95,7 @@ export default {};
         font-weight: bold;
       }
     }
+    // cerchio
     &::after {
       content: "";
       display: block;
@@ -115,17 +116,19 @@ export default {};
       display: block;
     }
     & > img {
-      border-radius: 10px;
+      border-radius: 5px;
     }
+    // immagine svolazzante in alto a sinistra
     .box-img-abs {
       width: 190px;
       height: 190px;
-      border-radius: 10px;
+      border-radius: 5px;
       overflow: hidden;
       position: absolute;
       top: -90px;
       right: -70px;
     }
+    // max shape in basso a destra
     .box-shape-abs {
       position: absolute;
       width: 120px;
@@ -133,6 +136,7 @@ export default {};
       bottom: -90px;
       right: 50px;
     }
+    // campitura in basso a sinistra
     &::after {
       content: "";
       display: block;
@@ -145,6 +149,7 @@ export default {};
       left: 5px;
       z-index: -1;
     }
+    // campitura in alto a destra
     &::before {
       content: "";
       display: block;

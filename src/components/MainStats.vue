@@ -37,17 +37,35 @@ export default {
 <style scoped lang="scss">
 @use "../assets/scss/partials/variables" as *;
 
+section {
+  position: relative;
+  overflow-y: hidden;
+  padding-bottom: 125px;
+  // cerchio
+  .container::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid $circle;
+    position: absolute;
+    bottom: -40px;
+    left: 58%;
+  }
+}
 .stats {
   justify-content: center;
   gap: 80px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+
   .stat {
     text-align: center;
     .number {
       font-size: 40px;
       color: $search-head;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     h4 {
       color: #727272;
