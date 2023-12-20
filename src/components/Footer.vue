@@ -74,7 +74,12 @@ export default {
           </div>
         </div>
       </div>
+    </div>
+    <div class="footer-bottom flex">
       <div class="copyright">&copy; 2020 Maxcoach. All Rights Reserved</div>
+      <div class="scroll-top">
+        <font-awesome-icon icon="fa-solid fa-arrow-up-long" />
+      </div>
     </div>
   </footer>
 </template>
@@ -82,7 +87,7 @@ export default {
 <style scoped lang="scss">
 @use "../assets/scss/partials/variables" as *;
 footer {
-  padding: 70px 0 50px 0;
+  padding: 70px 0 30px 0;
   background-color: $foot-bkg;
   .footer-left,
   .footer-right {
@@ -98,12 +103,27 @@ footer {
       }
     }
   }
-
-  .copyright {
-    color: #ababa7;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 14px;
+  .footer-bottom {
+    align-items: center;
+    margin-top: 30px;
+    .copyright {
+      flex-grow: 1;
+      color: #ababa7;
+      text-align: center;
+      font-size: 14px;
+    }
+    .scroll-top {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: white;
+      background-color: $search-head;
+      text-align: center;
+      line-height: 50px;
+      margin-right: 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
   }
   h4 {
     color: white;
