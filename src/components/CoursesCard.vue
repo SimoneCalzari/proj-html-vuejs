@@ -51,6 +51,7 @@ export default {
   width: calc((100% - 50px) / 3);
   border-radius: 5px;
   overflow: hidden;
+  background-color: white;
   .box-img {
     position: relative;
     .tag {
@@ -59,8 +60,20 @@ export default {
       right: 0;
       color: white;
       background-color: $free;
-      padding: 5px 10px;
+      padding: 0px 10px;
       font-size: 14px;
+      height: 24px;
+      line-height: 24px;
+      &::after {
+        content: "";
+        border-top: 12px solid $free;
+        border-bottom: 12px solid $free;
+        border-left: 14px solid transparent;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -12px;
+      }
     }
   }
   img {

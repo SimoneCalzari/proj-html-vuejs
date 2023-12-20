@@ -28,7 +28,7 @@ export default {
           cost2: ".00",
           title: "Open Programming Courses for Everyone: Python",
           lessons: "17 Lessons",
-          students: "769 Students ",
+          students: "72 Students ",
           free: false,
         },
       ],
@@ -122,6 +122,21 @@ h2 {
     border-bottom: 1px solid $link-underline;
     padding-bottom: 1px;
     font-weight: bold;
+  }
+}
+section {
+  background-image: linear-gradient(white, #f6f6f6);
+  position: relative;
+  padding-bottom: 80px;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background-color: #f6f6f6;
+    border-radius: 100%;
+    bottom: -50px;
   }
 }
 </style>
