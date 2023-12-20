@@ -1,5 +1,10 @@
 <script>
-export default {};
+import EverythingButton from "./EverythingButton.vue";
+export default {
+  components: {
+    EverythingButton,
+  },
+};
 </script>
 
 <template>
@@ -9,34 +14,26 @@ export default {};
         <!-- parte sinistra con foto -->
         <div class="box-img">
           <img
-            src="../assets/img/stock-full-hd-11-670x450.jpg"
-            alt="About-us"
+            src="../assets/img/home-3-team-image.png"
+            alt="Everything on Max Coach"
           />
-          <!-- logo youtube-->
-          <div class="box-img-abs">
-            <img src="../assets/img/icon-youtube-play.png" alt="About-us-2" />
+          <div class="max-shape">
+            <img src="../assets/img/maxcoach-shape-01.png" alt="" />
           </div>
-          <!-- /logo youtube -->
         </div>
 
         <!-- /parte sinistra con foto -->
 
         <!-- parte destra con la info -->
         <div class="box-info">
-          <h4 class="upper">how we work</h4>
-          <h2>Upgrade Your Skills <span>Upgrade Your Life</span></h2>
+          <h4 class="upper">Everything in <span>Maxcoach</span></h4>
+          <h2>We're Here To <span>Transform</span> You!</h2>
           <p>
-            Opening up more opportunities in front of you to get the ticket to
-            more enjoyable door in life. Getting equipped with new skills for
-            new sets of insights into your carrer. MaxCoach accompany learners
-            in every stage of learning.
+            As learnes, people can enjoy great companionship from MaxCoach
+            mentors and educators. We can help you develop and grow at your
+            best.
           </p>
-          <p>
-            <a href="#">
-              Download free guidebook
-              <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
-            </a>
-          </p>
+          <EverythingButton />
         </div>
         <!-- /parte destra con le info -->
       </div>
@@ -46,23 +43,24 @@ export default {};
 
 <style scoped lang="scss">
 @use "../assets/scss/partials/variables" as *;
-section {
-  overflow: hidden;
-  padding-bottom: 80px;
-}
 .box-content {
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 150px;
   .box-info {
-    width: 35%;
+    width: 40%;
     position: relative;
     h4 {
       font-size: 14px;
       color: $over-title;
       margin-bottom: 15px;
       font-weight: lighter;
+      span {
+        font-weight: bold;
+      }
     }
     h2 {
       color: $titles;
@@ -79,12 +77,6 @@ section {
       font-size: 13px;
       line-height: 1.4;
       margin-bottom: 20px;
-      a {
-        color: $titles;
-        border-bottom: 1px solid $link-underline;
-        padding-bottom: 3px;
-        font-weight: bold;
-      }
     }
     // cerchio
     &::after {
@@ -94,27 +86,18 @@ section {
       height: 50px;
       border-radius: 50%;
       border: 8px solid $circle;
-      top: -80px;
-      left: -15px;
+      top: -100px;
+      left: -45px;
       position: absolute;
-      z-index: -1;
     }
   }
   .box-img {
-    width: 57%;
+    width: 55%;
     position: relative;
     img {
       width: 100%;
       display: block;
       border-radius: 5px;
-    }
-    .box-img-abs {
-      width: 100px;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
     &::after {
       content: "";
@@ -123,20 +106,30 @@ section {
       height: 180px;
       background-image: url("../assets/img/maxcoach-shape-05.png");
       position: absolute;
-      top: 30px;
-      left: -100px;
+      top: 100px;
+      left: -140px;
       z-index: -1;
     }
     &::before {
       content: "";
       display: block;
-      width: 170px;
-      height: 170px;
+      width: 140px;
+      height: 100px;
       background-image: url("../assets/img/maxcoach-shape-07.png");
       position: absolute;
       bottom: -100px;
-      right: -20px;
+      right: 100px;
       z-index: -1;
+    }
+    .max-shape {
+      width: 130px;
+      position: absolute;
+      bottom: 40px;
+      left: -20vw;
+      img {
+        width: 100%;
+        display: block;
+      }
     }
   }
 }

@@ -5,6 +5,7 @@ import MainStats from "./MainStats.vue";
 import MainHowWeWork from "./MainHowWeWork.vue";
 import MainCourses from "./MainCourses.vue";
 import MainTestimonials from "./MainTestimonials.vue";
+import MainEverything from "./MainEverything.vue";
 export default {
   components: {
     Jumbo,
@@ -13,6 +14,7 @@ export default {
     MainHowWeWork,
     MainCourses,
     MainTestimonials,
+    MainEverything,
   },
 };
 </script>
@@ -25,6 +27,7 @@ export default {
     <MainHowWeWork />
     <MainCourses />
     <MainTestimonials />
+    <MainEverything />
   </main>
 </template>
 

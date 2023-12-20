@@ -85,6 +85,7 @@ h2 {
   margin-bottom: 60px;
   span {
     color: $search-head;
+    font-weight: lighter;
   }
 }
 

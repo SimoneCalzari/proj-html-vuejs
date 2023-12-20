@@ -81,6 +81,7 @@ export default {};
       line-height: 1.3;
       span {
         color: $search-head;
+        font-weight: lighter;
       }
     }
     p {
