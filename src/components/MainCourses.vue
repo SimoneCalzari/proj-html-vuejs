@@ -48,6 +48,21 @@ export default {
       <div class="cards flex">
         <CoursesCard v-for="cardData in cardsData" :card="cardData" />
       </div>
+      <div class="points flex">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </div>
+      <div class="all-courses">
+        Control your personal preference settings to get notified about
+        appropriate courses.
+        <a href="#">
+          View all courses
+          <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -75,5 +90,38 @@ h2 {
 
 .cards {
   gap: 25px;
+}
+.points {
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  .point {
+    width: 8px;
+    height: 8px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+  }
+  .point:first-child {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+  }
+}
+.all-courses {
+  width: 45%;
+  margin: 0 auto;
+  color: $over-title;
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  a {
+    color: $titles;
+    border-bottom: 1px solid $link-underline;
+    padding-bottom: 1px;
+    font-weight: bold;
+  }
 }
 </style>
