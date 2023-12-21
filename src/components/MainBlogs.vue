@@ -39,9 +39,11 @@ export default {
     <div class="container">
       <h4 class="upper">read for more joyment</h4>
       <h2>Latest From <span>Our Blogs</span></h2>
+      <!-- container card -->
       <div class="cards flex">
         <BlogsCard v-for="cardData in cardsData" :card="cardData" />
       </div>
+      <!-- /container card -->
     </div>
   </section>
 </template>

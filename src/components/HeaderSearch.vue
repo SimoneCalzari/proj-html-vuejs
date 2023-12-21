@@ -12,7 +12,8 @@ export default {};
       <font-awesome-icon icon="fa-regular fa-circle-user" />
     </div>
     <div class="search-bar flex">
-      <input type="text" placeholder="Search..." />
+      <label for="search" class="visuallyhidden">Search in our website</label>
+      <input type="text" placeholder="Search..." id="search" />
       <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
     </div>
   </div>
@@ -55,11 +56,22 @@ export default {};
     & > *:nth-child(2) {
       color: $search-head;
     }
-    input {
+    #search {
       background-color: transparent;
       outline: none;
       border: none;
     }
   }
+}
+// laber disponibile per l'accessibilità ma non visibile dall'utente
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 </style>

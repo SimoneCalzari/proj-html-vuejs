@@ -45,9 +45,12 @@ export default {
     <div class="container">
       <h4 class="upper">join maxcoach at best</h4>
       <h2>Latest Online <span>Courses</span></h2>
+      <!-- contenitore card -->
       <div class="cards flex">
         <CoursesCard v-for="cardData in cardsData" :card="cardData" />
       </div>
+      <!-- /contenitore card -->
+      <!-- puntini stile slider sotto le card -->
       <div class="points flex">
         <div class="point"></div>
         <div class="point"></div>
@@ -55,6 +58,8 @@ export default {
         <div class="point"></div>
         <div class="point"></div>
       </div>
+      <!-- /puntini stile slider sotto le card -->
+      <!-- testo con link sotto i puntini -->
       <div class="all-courses">
         Control your personal preference settings to get notified about
         appropriate courses.
@@ -63,6 +68,7 @@ export default {
           <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
         </a>
       </div>
+      <!-- /testo con link sotto i puntini -->
     </div>
   </section>
 </template>
@@ -128,6 +134,7 @@ section {
   background-image: linear-gradient(white, #f6f6f6);
   position: relative;
   padding-bottom: 80px;
+  // onda nella parte bassa della sezione
   &::after {
     content: "";
     width: 100%;

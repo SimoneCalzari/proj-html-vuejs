@@ -17,24 +17,30 @@ export default {
     <div class="box-img">
       <img
         :src="getImagePath(`../assets/img/${card.img}`)"
-        alt="foto del corso"
+        alt="foto che fornisce un'idea sul blog corrente"
       />
     </div>
     <!-- /immagine -->
     <!-- info -->
     <div class="box-info">
+      <!-- ruolo -->
       <div class="role upper">
         {{ card.role }}
       </div>
+      <!-- /ruolo -->
       <h4>{{ card.title }}</h4>
+      <!-- data -->
       <span class="date">
         <font-awesome-icon icon="fa-regular fa-calendar" />
         {{ card.date }}
       </span>
+      <!-- /data -->
+      <!-- visualizzazioni -->
       <span class="views">
         <font-awesome-icon icon="fa-solid fa-eye" />
         {{ card.views }}
       </span>
+      <!-- /visualizzazioni -->
     </div>
     <!-- /info -->
   </div>

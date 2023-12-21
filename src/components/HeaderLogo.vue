@@ -4,7 +4,7 @@ export default {};
 
 <template>
   <div class="logo-container">
-    <img src="/img/dark-logo.png" alt="Logo MaxCoach" />
+    <img src="/img/dark-logo.png" alt="Logo della pagina MaxCoach" />
   </div>
 </template>
 

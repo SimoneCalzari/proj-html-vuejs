@@ -37,7 +37,10 @@ export default {};
           <!-- persona -->
           <div class="person flex">
             <div class="person-img">
-              <img src="../assets/img/testimonial-avata-01.jpg" alt="" />
+              <img
+                src="../assets/img/testimonial-avata-01.jpg"
+                alt="foto di uno degli impiegati di maxcoach"
+              />
             </div>
             <div class="person-info flex">
               <h4 class="upper">Madley pondor</h4>
@@ -45,7 +48,7 @@ export default {};
             </div>
           </div>
           <!-- /persona -->
-          <!-- background abs top -->
+          <!-- altra card sotto quella principale, parte alta -->
           <div class="abs-top">
             <h3>
               The MaxCoach team works really hard to ensure high level of
@@ -56,12 +59,15 @@ export default {};
               smart tutor and they are professional when dealing with students.
             </p>
           </div>
-          <!-- /background abs top -->
-          <!-- background abs bottom -->
+          <!-- /altra card sotto quella principale, parte alta -->
+          <!-- altra card sotto quella principale, parte bassa -->
           <div class="abs-bottom">
             <div class="person flex">
               <div class="person-img">
-                <img src="../assets/img/testimonial-avata-02.jpg" alt="" />
+                <img
+                  src="../assets/img/testimonial-avata-02.jpg"
+                  alt="foto di uno degli impiegati di maxcoach"
+                />
               </div>
               <div class="person-info flex">
                 <h4 class="upper">mina hollace</h4>
@@ -69,7 +75,7 @@ export default {};
               </div>
             </div>
           </div>
-          <!-- /background abs bottom -->
+          <!-- /altra card sotto quella principale, parte bassa -->
         </div>
       </div>
     </div>
@@ -160,6 +166,7 @@ section {
         color: #9c9c9c;
       }
     }
+    // parte superiore della card di sfondo
     .abs-top {
       position: absolute;
       top: -95px;
@@ -178,6 +185,7 @@ section {
         font-size: 12px;
       }
     }
+    // parte inferiore della card di sfondo
     .abs-bottom {
       position: absolute;
       bottom: -75px;
@@ -188,7 +196,6 @@ section {
       width: 75%;
       left: 12.5%;
       filter: opacity(0.5);
-
       .person-img {
         width: 50px;
         height: 50px;

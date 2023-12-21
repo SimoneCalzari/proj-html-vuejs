@@ -29,13 +29,13 @@ export default {};
         <div class="box-img">
           <img
             src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
-            alt="About-us"
+            alt="Foto principale della sezione About us"
           />
           <!-- immagine volante ragazza col pc -->
           <div class="box-img-abs">
             <img
               src="../assets/img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg"
-              alt="About-us-2"
+              alt="Foto secondaria della sezione About us"
             />
           </div>
           <!-- /immagine volante ragazza col pc -->
@@ -43,7 +43,7 @@ export default {};
           <div class="box-shape-abs">
             <img
               src="../assets/img/maxcoach-shape-02.png"
-              alt="shape-maxcoach"
+              alt="immagine di decorazione della sezione About us"
             />
           </div>
           <!-- /immagine volante max coach shape -->
@@ -96,7 +96,7 @@ export default {};
         font-weight: bold;
       }
     }
-    // cerchio
+    // cerchio decorativo
     &::after {
       content: "";
       display: block;
@@ -119,7 +119,7 @@ export default {};
     & > img {
       border-radius: 5px;
     }
-    // immagine svolazzante in alto a sinistra
+    // immagine svolazzante in alto a destra
     .box-img-abs {
       width: 190px;
       height: 190px;

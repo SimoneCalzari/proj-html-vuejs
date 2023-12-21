@@ -14,7 +14,8 @@ export default {};
         delivered on a regular basis!
       </p>
       <div class="input-box flex">
-        <input type="email" placeholder="Enter your email" />
+        <label for="email" class="visuallyhidden">Enter your email</label>
+        <input type="email" placeholder="Enter your email" id="email" />
         <button>Subscribe</button>
       </div>
     </div>
@@ -36,6 +37,7 @@ h2 {
     color: $search-head;
     font-weight: lighter;
   }
+  // campitura quadrata inclinata
   &::before {
     content: "";
     display: block;
@@ -56,6 +58,7 @@ p {
   line-height: 1.6;
   margin-bottom: 40px;
   position: relative;
+  // cerchio decorativo a sinistra
   &::after {
     content: "";
     width: 38px;
@@ -67,6 +70,7 @@ p {
     left: -23vw;
     bottom: -30px;
   }
+  // simbolo maxcoach a destra
   &::before {
     content: "";
     display: block;
@@ -97,6 +101,17 @@ p {
     background-color: $search-head;
     cursor: pointer;
     font-weight: bold;
+  }
+  // laber disponibile per l'accessibilità ma non visibile dall'utente
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }
 </style>

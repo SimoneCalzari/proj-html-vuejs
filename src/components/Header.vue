@@ -13,13 +13,17 @@ export default {
 
 <template>
   <header>
+    <!-- /container per dare margine laterale -->
     <div class="head-container">
+      <!-- container del contenuto  -->
       <div class="head-content flex">
         <HeaderNav />
         <HeaderLogo />
         <HeaderSearch />
       </div>
+      <!-- /container del contenuto  -->
     </div>
+    <!-- container per dare margine laterale -->
   </header>
 </template>
 
@@ -29,7 +33,7 @@ header {
   height: 80px;
   .head-container {
     width: 85%;
-    margin: auto;
+    margin: 0 auto;
     height: 100%;
     .head-content {
       height: 100%;

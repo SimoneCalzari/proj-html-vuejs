@@ -17,12 +17,16 @@ export default {
             src="../assets/img/home-3-team-image.png"
             alt="Everything on Max Coach"
           />
+          <!-- decorazione tre linee a sinistra -->
           <div class="max-shape">
             <img src="../assets/img/maxcoach-shape-01.png" alt="" />
           </div>
+          <!-- /decorazione tre linee a sinistra -->
+          <!-- decorazione quadrifoglio in alto a sinistra -->
           <div class="quatrefoil">
             <img src="../assets/img/quatrefoil2.png" alt="" />
           </div>
+          <!-- /decorazione quadrifoglio in alto a sinistra -->
         </div>
 
         <!-- /parte sinistra con foto -->
@@ -36,7 +40,9 @@ export default {
             mentors and educators. We can help you develop and grow at your
             best.
           </p>
+          <!-- bottone -->
           <EverythingButton />
+          <!-- /bottone -->
         </div>
         <!-- /parte destra con le info -->
       </div>
@@ -102,6 +108,7 @@ export default {
       display: block;
       border-radius: 5px;
     }
+    // campitura circolare in alto a sinistra
     &::after {
       content: "";
       display: block;
@@ -113,6 +120,7 @@ export default {
       left: -140px;
       z-index: -1;
     }
+    // campitura quadrata in basso a destra
     &::before {
       content: "";
       display: block;
@@ -124,6 +132,7 @@ export default {
       right: 100px;
       z-index: -1;
     }
+    // simbolo della tre linee sulla parte sinistra dello schermo
     .max-shape {
       width: 130px;
       position: absolute;
@@ -134,6 +143,7 @@ export default {
         display: block;
       }
     }
+    // quadrifoglio decorativo
     .quatrefoil {
       width: 200px;
       position: absolute;

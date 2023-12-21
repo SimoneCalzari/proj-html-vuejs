@@ -24,14 +24,18 @@ export default {
 <template>
   <footer>
     <div class="container">
+      <!-- contenitore dei menu del footer -->
       <div class="footer-content flex">
         <div class="footer-left">
+          <!-- indirizzi -->
           <h4>Address</h4>
           <ul class="info-address">
             <li>382 NE 191st St # 87394Miami, FL 33179-3899</li>
             <li>+1(305)547-9909 (9am - 5pm EST, Monday-Friday)</li>
             <li>support@maxcoach.com</li>
           </ul>
+          <!-- /indirizzi -->
+          <!-- lista socials -->
           <ul class="socials flex">
             <li>
               <a href="#">
@@ -54,33 +58,41 @@ export default {
               </a>
             </li>
           </ul>
+          <!-- /lista socials -->
         </div>
         <div class="footer-right flex">
           <div class="list">
+            <!-- lista esplora -->
             <h4>Explore</h4>
             <ul>
               <li v-for="link in explore">
                 <a href="#">{{ link }}</a>
               </li>
             </ul>
+            <!-- /lista esplora -->
           </div>
           <div class="list">
+            <!-- lista info -->
             <h4>Information</h4>
             <ul>
               <li v-for="link in information">
                 <a href="#">{{ link }}</a>
               </li>
             </ul>
+            <!-- /lista info -->
           </div>
         </div>
       </div>
+      <!-- /contenitore dei menu del footer -->
     </div>
+    <!-- parte bassa del footer con copyright e button back to top -->
     <div class="footer-bottom flex">
       <div class="copyright">&copy; 2020 Maxcoach. All Rights Reserved</div>
       <div class="scroll-top">
         <font-awesome-icon icon="fa-solid fa-arrow-up-long" />
       </div>
     </div>
+    <!-- /parte bassa del footer con copyright e button back to top -->
   </footer>
 </template>
 

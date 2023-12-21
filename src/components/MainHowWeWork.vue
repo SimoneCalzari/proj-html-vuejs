@@ -14,14 +14,18 @@ export default {};
           />
           <!-- logo youtube-->
           <div class="box-img-abs">
-            <img src="../assets/img/icon-youtube-play.png" alt="About-us-2" />
+            <img
+              src="../assets/img/icon-youtube-play.png"
+              alt="Foto principale della sezione How we work"
+            />
           </div>
           <!-- /logo youtube -->
+          <!-- quadrifoglio decorativo -->
           <div class="quatrefoil">
             <img src="../assets/img/quatrefoil1.png" alt="" />
           </div>
+          <!-- /quadrifoglio decorativo -->
         </div>
-
         <!-- /parte sinistra con foto -->
 
         <!-- parte destra con la info -->
@@ -89,7 +93,7 @@ section {
         font-weight: bold;
       }
     }
-    // cerchio
+    // cerchio decorativo tagliato
     &::after {
       content: "";
       display: block;
@@ -111,6 +115,7 @@ section {
       display: block;
       border-radius: 5px;
     }
+    // logo youtube
     .box-img-abs {
       width: 100px;
       overflow: hidden;
@@ -119,6 +124,7 @@ section {
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    // campitura circolare in alto a sinistra
     &::after {
       content: "";
       display: block;
@@ -130,6 +136,7 @@ section {
       left: -100px;
       z-index: -1;
     }
+    // campitura quadrata in basso a destra
     &::before {
       content: "";
       display: block;
@@ -141,6 +148,7 @@ section {
       right: -20px;
       z-index: -1;
     }
+    // quadrifoglio decorativo in alto a sinistra
     .quatrefoil {
       width: 200px;
       position: absolute;

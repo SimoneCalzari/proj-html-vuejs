@@ -25,7 +25,7 @@ export default {
     <div class="box-img">
       <img
         :src="getImagePath(`../assets/img/${card.img}`)"
-        alt="foto del corso"
+        alt="foto che rappresenta uno dei corsi di questo sito"
       />
       <!-- tag free -->
       <div class="tag upper" v-show="card.free">free</div>
@@ -34,11 +34,14 @@ export default {
     <!-- /immagine -->
     <!-- info -->
     <div class="box-info">
+      <!-- costo del corso -->
       <div class="cost">
         <span>{{ card.cost1 }}</span>
         <span>{{ card.cost2 }}</span>
       </div>
+      <!-- /costo del corso -->
       <h4 :class="{ hover: hoverCard }">{{ card.title }}</h4>
+      <!-- icone con testo -->
       <span class="lessons">
         <font-awesome-icon icon="fa-regular fa-file-lines" />
         {{ card.lessons }}
@@ -47,6 +50,7 @@ export default {
         <font-awesome-icon icon="fa-regular fa-user" />
         {{ card.students }}
       </span>
+      <!-- /icone con testo -->
     </div>
     <!-- /info -->
   </div>
@@ -91,7 +95,6 @@ export default {
   }
   .box-info {
     padding: 25px;
-
     h4 {
       font-size: 16px;
       line-height: 1.5;

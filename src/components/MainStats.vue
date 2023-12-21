@@ -25,10 +25,12 @@ export default {
   <section>
     <div class="container">
       <div class="stats flex">
+        <!-- card con statistiche -->
         <div class="stat" v-for="stat in stats">
           <div class="number">{{ stat.num }}</div>
           <h4 class="upper">{{ stat.text }}</h4>
         </div>
+        <!-- /card con statistiche -->
       </div>
     </div>
   </section>
@@ -41,7 +43,7 @@ section {
   position: relative;
   overflow-y: hidden;
   padding-bottom: 125px;
-  // cerchio
+  // cerchio tagliato in fondo alla sezione
   .container::after {
     content: "";
     display: block;
@@ -57,7 +59,6 @@ section {
 .stats {
   justify-content: center;
   gap: 80px;
-  // margin-bottom: 60px;
 
   .stat {
     text-align: center;
